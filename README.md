@@ -96,4 +96,4 @@ The application consumes backend data from:
 6. Songs Section (filtered by Jazz genre)  
 	![Songs Section Filtered Jazz](docs/screenshots/06-songs-section-jazz-filter.png)
 
-> Note: Add your screenshot files to `docs/screenshots/` using the exact file names above so they render automatically in this README.
+

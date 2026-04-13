@@ -1,0 +1,28 @@
+.navbar {
+  background: var(--color-accent);
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 28px;
+}
+
+.searchWrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 16px 16px;
+  }
+
+  .searchWrap {
+    order: 3;
+    width: 100%;
+  }
+}

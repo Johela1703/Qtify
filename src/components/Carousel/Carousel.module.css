@@ -1,0 +1,44 @@
+.carouselWrap {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  width: 159px;
+}
+
+.navButton {
+  position: absolute;
+  top: 84px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-accent);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.left {
+  left: -12px;
+}
+
+.right {
+  right: -12px;
+}
+
+:global(.swiper-button-disabled) {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .left {
+    left: -8px;
+  }
+
+  .right {
+    right: -8px;
+  }
+}

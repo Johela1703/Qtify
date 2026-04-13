@@ -1,0 +1,74 @@
+.section {
+  padding: 28px 24px 14px;
+}
+
+.section + .section {
+  border-top: 1px solid rgba(52, 201, 75, 0.5);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.headerRow h2 {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.toggleButton {
+  border: none;
+  background: transparent;
+  color: var(--color-accent);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(159px, max-content));
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.tabsWrap {
+  margin-top: -10px;
+  margin-bottom: 14px;
+}
+
+.tab {
+  color: #ffffff !important;
+  text-transform: none !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  min-width: 64px !important;
+  padding: 8px 12px !important;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 16px;
+  }
+
+  .headerRow h2 {
+    font-size: 20px;
+  }
+
+  .toggleButton {
+    font-size: 16px;
+  }
+
+  .grid {
+    justify-content: start;
+    gap: 16px;
+  }
+}

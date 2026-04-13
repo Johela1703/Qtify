@@ -1,0 +1,21 @@
+.app {
+  width: 100%;
+  margin: 0 auto;
+  background: var(--color-black);
+  padding-bottom: 98px;
+}
+
+main {
+  padding-bottom: 24px;
+}
+
+.loading {
+  padding: 24px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .app {
+    padding-bottom: 128px;
+  }
+}

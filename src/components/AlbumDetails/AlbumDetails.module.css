@@ -1,0 +1,196 @@
+.detailsPage {
+  padding: 20px 28px 12px;
+  color: #ffffff;
+}
+
+.backButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.heroRow {
+  margin-top: 18px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.coverImage {
+  width: 170px;
+  height: 190px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.infoBlock h1 {
+  margin: 0;
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.description {
+  margin: 10px 0 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+
+.meta {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+}
+
+.actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.shuffleButton,
+.libraryButton {
+  border-radius: 8px;
+  border: 1px solid var(--color-accent);
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+.shuffleButton {
+  background: var(--color-accent);
+  color: #121212;
+}
+
+.libraryButton {
+  background: transparent;
+  color: var(--color-accent);
+}
+
+.tableWrap {
+  margin-top: 24px;
+}
+
+.tableHeader,
+.songRow {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 80px;
+  gap: 14px;
+  align-items: center;
+}
+
+.tableHeader {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  padding: 0 0 8px;
+}
+
+.songRow {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: inherit;
+  text-align: left;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  min-height: 56px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.songRow:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.titleCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.songThumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.artistCell {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.durationCell {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.pagination {
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pageButton,
+.pageArrow {
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.pageArrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pageButton:hover,
+.pageArrow:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.activePage {
+  background: var(--color-accent);
+  color: #121212;
+  font-weight: 600;
+}
+
+.pageEllipsis {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .detailsPage {
+    padding: 16px;
+  }
+
+  .heroRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .infoBlock h1 {
+    font-size: 30px;
+  }
+
+  .tableHeader,
+  .songRow {
+    grid-template-columns: 1.5fr 1fr 64px;
+  }
+}
